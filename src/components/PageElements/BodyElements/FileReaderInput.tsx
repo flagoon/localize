@@ -2,6 +2,8 @@ import React, { ChangeEvent, useContext } from 'react';
 import { FileInput, FileLabel } from './FileReaderInput.styled';
 import ReportContext from '../../Context/ReportContext';
 
+import { xmlDataExtractor } from './xmlDataExtractor';
+
 export default function FileReaderInput(): JSX.Element {
   const { transformingParsedXMLIntoObject, reportContent } = useContext(
     ReportContext,
