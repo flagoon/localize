@@ -1,9 +1,11 @@
 import React, { ChangeEvent } from 'react';
 import { FileInput, FileLabel } from './FileReaderInput.styled';
 
+import { xmlDataExtractor } from './xmlDataExtractor';
+
 export default function FileReaderInput(): JSX.Element {
   const handleFile = (file: string): void => {
-    console.log(file);
+    xmlDataExtractor(file);
   };
 
   const handleChange = (e: ChangeEvent<HTMLInputElement>): void => {
