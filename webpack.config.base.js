@@ -29,16 +29,31 @@ module.exports = {
         },
       },
       {
-        // Include ts, tsx, js, and jsx files.
         test: /\.(js|jsx)?$/,
         exclude: /node_modules/,
         use: 'babel-loader',
       },
       {
-        // Include ts, tsx, js, and jsx files.
         test: /\.(ts|tsx)?$/,
         exclude: /node_modules/,
         use: [{ loader: 'ts-loader', options: { transpileOnly: true } }],
+      },
+      {
+        test: /\.css$/,
+        use: [{ loader: 'style-loader' }, { loader: 'css-loader' }],
+      },
+      {
+        test: /\.(gif|png|jpe?g|svg)$/i,
+        use: [
+          'file-loader',
+          {
+            loader: 'image-webpack-loader',
+            options: {
+              bypassOnDebug: true, // webpack@1.x
+              disable: true, // webpack@2.x and newer
+            },
+          },
+        ],
       },
     ],
   },

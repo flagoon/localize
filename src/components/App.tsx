@@ -1,5 +1,5 @@
+import { hot } from 'react-hot-loader/root';
 import React from 'react';
-import { hot } from 'react-hot-loader';
 
 import { Body, Footer, Header } from './PageElements';
 
@@ -13,4 +13,4 @@ function App(): JSX.Element {
   );
 }
 
-export default hot(module)(App);
+export default hot(App);
