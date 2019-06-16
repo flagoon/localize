@@ -1,11 +1,14 @@
-import React, { ChangeEvent } from 'react';
+import React, { ChangeEvent, useContext } from 'react';
 import { FileInput, FileLabel } from './FileReaderInput.styled';
 
 import { xmlDataExtractor } from './xmlDataExtractor';
+import ReportContext from '../../Context/ReportContext';
 
 export default function FileReaderInput(): JSX.Element {
+  const { updateFile, file } = useContext(ReportContext);
+
   const handleFile = (file: string): void => {
-    xmlDataExtractor(file);
+    updateFile(xmlDataExtractor(file));
   };
 
   const handleChange = (e: ChangeEvent<HTMLInputElement>): void => {
@@ -30,6 +33,7 @@ export default function FileReaderInput(): JSX.Element {
         onChange={handleChange}
       />
       <FileLabel htmlFor="fileHandler">Dodaj plik raportu</FileLabel>
+      <textarea defaultValue={JSON.stringify(file)}></textarea>
     </>
   );
 }
