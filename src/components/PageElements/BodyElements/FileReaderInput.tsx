@@ -33,7 +33,7 @@ export default function FileReaderInput(): JSX.Element {
         onChange={handleChange}
       />
       <FileLabel htmlFor="fileHandler">Dodaj plik raportu</FileLabel>
-      <textarea defaultValue={JSON.stringify(file)}></textarea>
+      <textarea value={JSON.stringify(file)} />
     </>
   );
 }
