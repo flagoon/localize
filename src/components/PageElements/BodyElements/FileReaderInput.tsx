@@ -1,4 +1,4 @@
-import React, { ChangeEvent, useContext } from 'react';
+import React, { ChangeEvent } from 'react';
 import { FileInput, FileLabel } from './FileReaderInput.styled';
 import ReportContext from '../../Context/ReportContext';
 
@@ -29,7 +29,10 @@ export default function FileReaderInput(): JSX.Element {
         onChange={handleChange}
       />
       <FileLabel htmlFor="fileHandler">Dodaj plik raportu</FileLabel>
+<<<<<<< HEAD
       <textarea value={JSON.stringify(reportContent)} readOnly></textarea>
+=======
+>>>>>>> 740da05... Working on XMLObject.
     </>
   );
 }

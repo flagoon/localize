@@ -2,7 +2,6 @@ declare module '*.png' {
   const content: string;
   export default content;
 }
-<<<<<<< HEAD
 
 declare interface ExtractAttributesData {
   [key: string]: parseAttributes;
@@ -51,5 +50,8 @@ declare type parseNode = parse.Node;
 declare type parseDocument = parse.Document;
 declare type parseAttributes = parse.Attributes;
 declare type parseDeclarations = parse.Declarations;
-=======
->>>>>>> fb6ca78... Added filereader component.
+
+declare interface ReportContextInterface {
+  file: parse.Document;
+  updateFile: (file: parse.Document) => void;
+}
