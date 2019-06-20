@@ -1,14 +1,38 @@
-import React, { ChangeEvent, useContext } from 'react';
+import React, { ChangeEvent } from 'react';
+import parse from 'xml-parser';
 import { FileInput, FileLabel } from './FileReaderInput.styled';
-
-import { xmlDataExtractor } from './xmlDataExtractor';
-import ReportContext from '../../Context/ReportContext';
+import { xmlDataParser } from './xmlDataParser';
 
 export default function FileReaderInput(): JSX.Element {
-  const { updateFile, file } = useContext(ReportContext);
+  function findInXmlObject(
+    requiredChildName: string,
+    children: parse.Node[],
+  ): parse.Node {
+    const requiredChild = children.filter(
+      child => child.name === requiredChildName,
+    );
+    return requiredChild[0];
+  }
+
+  const extractFormData = (xmlObject: parse.Document): void => {
+    const taskInfoData = findInXmlObject('taskInfo', xmlObject.root.children);
+    const batchTotalData = findInXmlObject(
+      'batchTotal',
+      xmlObject.root.children,
+    );
+    const taskInfoObject: { [key: string]: string } = {};
+    taskInfoData.children.forEach(data => {
+      if (data['name'] !== 'settings') {
+        taskInfoObject[data['name']] = data.attributes.name;
+      }
+    });
+    console.log(taskInfoObject);
+    console.log('taskInfoData', taskInfoData);
+    console.log(batchTotalData.children[0]);
+  };
 
   const handleFile = (file: string): void => {
-    updateFile(xmlDataExtractor(file));
+    extractFormData(xmlDataParser(file));
   };
 
   const handleChange = (e: ChangeEvent<HTMLInputElement>): void => {
@@ -33,7 +57,6 @@ export default function FileReaderInput(): JSX.Element {
         onChange={handleChange}
       />
       <FileLabel htmlFor="fileHandler">Dodaj plik raportu</FileLabel>
-      <textarea value={JSON.stringify(file)} />
     </>
   );
 }
