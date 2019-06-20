@@ -6,9 +6,9 @@ import { Body, Footer, Header } from './PageElements';
 function App(): JSX.Element {
   return (
     <>
-      <Footer />
-      <Body />
       <Header />
+      <Body />
+      <Footer />
     </>
   );
 }

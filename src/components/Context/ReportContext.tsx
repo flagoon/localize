@@ -1,11 +1,6 @@
 import { createContext } from 'react';
 import parse from 'xml-parser';
 
-interface ReportContextInterface {
-  file: parse.Document;
-  updateFile: (file: parse.Document) => void;
-}
-
 export const InitialReportFile: parse.Document = {
   root: {
     attributes: { name: '' },
