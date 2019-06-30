@@ -30,8 +30,8 @@ declare interface AttributesObject {
 
 declare interface ReportContextInterface {
   reportContent: parseDocument;
-  updateFile: (file: parseDocument) => void;
-  transformingParsedXMLIntoObject: (file: string) => void;
+  updateFile: (reportContent: parseDocument) => void;
+  transformingParsedXMLIntoObject: (reportContent: string) => void;
 }
 
 declare interface ReportData {
