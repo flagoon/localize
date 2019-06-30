@@ -3,7 +3,50 @@ declare module '*.png' {
   export default content;
 }
 
-declare interface ReportContextInterface {
-  file: parse.Document;
-  updateFile: (file: parse.Document) => void;
+declare interface ExtractAttributesData {
+  [key: string]: parseAttributes;
 }
+
+declare interface StringObject {
+  [key: string]: string;
+}
+
+declare interface AttributesObject {
+  perfect: parseAttributes;
+  inContextExact: parseAttributes;
+  exact: parseAttributes;
+  locked: parseAttributes;
+  crossFileRepeated: parseAttributes;
+  repeated: parseAttributes;
+  total: parseAttributes;
+  new: parseAttributes;
+  newBaseline: parseAttributes;
+  newLearnings: parseAttributes;
+  fuzzy50: parseAttributes;
+  fuzzy75: parseAttributes;
+  fuzzy85: parseAttributes;
+  fuzzy95: parseAttributes;
+}
+
+declare interface ReportContextInterface {
+  reportContent: parseDocument;
+  updateFile: (file: parseDocument) => void;
+  transformingParsedXMLIntoObject: (file: string) => void;
+}
+
+declare interface ReportData {
+  taskInfo: StringObject;
+  fileInfoAndBatch: ReportFileData;
+}
+
+declare interface ReportFileData {
+  [key: string]: AttributesObject;
+}
+
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+declare type $TSFixMe = any;
+
+declare type parseNode = parse.Node;
+declare type parseDocument = parse.Document;
+declare type parseAttributes = parse.Attributes;
+declare type parseDeclarations = parse.Declarations;
