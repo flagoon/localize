@@ -9,6 +9,5 @@ const ReportContext = createContext<ReportContextInterface>({
   reportContent: InitialReportContent,
   updateFile: () => {},
   transformingParsedXMLIntoObject: () => {},
-});
 
 export default ReportContext;
