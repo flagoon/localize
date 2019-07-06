@@ -50,8 +50,3 @@ declare type parseNode = parse.Node;
 declare type parseDocument = parse.Document;
 declare type parseAttributes = parse.Attributes;
 declare type parseDeclarations = parse.Declarations;
-
-declare interface ReportContextInterface {
-  file: parse.Document;
-  updateFile: (file: parse.Document) => void;
-}
