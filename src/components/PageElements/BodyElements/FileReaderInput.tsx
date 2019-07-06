@@ -1,4 +1,4 @@
-import React, { ChangeEvent, useContext } from 'react';
+import React, { ChangeEvent, useContext, useEffect } from 'react';
 import { FileInput, FileLabel } from './FileReaderInput.styled';
 import ReportContext from '../../Context/ReportContext';
 
@@ -6,6 +6,10 @@ export default function FileReaderInput(): JSX.Element {
   const { transformingParsedXMLIntoObject, reportContent } = useContext(
     ReportContext,
   );
+
+  useEffect(() => {
+    console.log(reportContent.fileInfoAndBatch.batchTotal);
+  }, [reportContent]);
 
   const handleChange = (e: ChangeEvent<HTMLInputElement>): void => {
     const fileReader: FileReader = new FileReader();
