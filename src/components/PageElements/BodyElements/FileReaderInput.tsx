@@ -8,7 +8,10 @@ export default function FileReaderInput(): JSX.Element {
   );
 
   useEffect(() => {
-    console.log(reportContent.fileInfoAndBatch.batchTotal);
+    const total = reportContent.fileInfoAndBatch.batchTotal
+      ? reportContent.fileInfoAndBatch.batchTotal
+      : 'No BatchTotal';
+    console.log(total);
   }, [reportContent]);
 
   const handleChange = (e: ChangeEvent<HTMLInputElement>): void => {
@@ -33,7 +36,6 @@ export default function FileReaderInput(): JSX.Element {
         onChange={handleChange}
       />
       <FileLabel htmlFor="fileHandler">Dodaj plik raportu</FileLabel>
-      <textarea value={JSON.stringify(reportContent)} readOnly></textarea>
     </>
   );
 }
