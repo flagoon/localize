@@ -1,0 +1,273 @@
+<task name="analyse">
+    <taskInfo taskId="a0ed5ca2-c024-4ab8-8c53-f4a0d4f5b289" runAt="28.06.2019 10:32:06" runTime="16 seconds">
+        <project name="Project 1" number="71962b84-9467-4109-a1ff-4a096005fc9b" />
+        <language lcid="1045" name="Polish (Poland)" />
+        <customer name="Jacek" />
+        <tm name="TM ogólna ENuk-PL.sdltm" />
+        <settings reportInternalFuzzyLeverage="yes" reportLockedSegmentsSeparately="no" reportCrossFileRepetitions="yes" minimumMatchScore="70" searchMode="bestWins" missingFormattingPenalty="1" differentFormattingPenalty="1" multipleTranslationsPenalty="1" autoLocalizationPenalty="0" textReplacementPenalty="0" alignmentPenalty="1" characterWidthDifferencePenaltyEnabled="yes" characterWidthDifferencePenalty="1" enableFuzzyMatchRepair="no" enableMtFuzzyMatchRepair="no" fullRecallMatchedWords="2" partialRecallMatchedWords="n/a" fullRecallSignificantWords="2" partialRecallSignificantWords="n/a" />
+    </taskInfo>
+    <file name="AK47.docx.sdlxliff" guid="215f799c-fa46-4972-b17f-73a83cec6af2">
+        <analyse>
+            <perfect segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <inContextExact segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <exact segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <locked segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <crossFileRepeated segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <repeated segments="11" words="19" characters="155" placeables="7" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <total segments="67" words="311" characters="2255" placeables="66" tags="18" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <new segments="38" words="271" characters="1430" placeables="44" tags="18" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <newBaseline segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <newLearnings segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <fuzzy min="50" max="74" segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <fuzzy min="75" max="84" segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <fuzzy min="85" max="94" segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <fuzzy min="95" max="99" segments="15" words="15" characters="634" placeables="15" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <internalFuzzy min="50" max="74" segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <internalFuzzy min="75" max="84" segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <internalFuzzy min="85" max="94" segments="2" words="4" characters="24" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <internalFuzzy min="95" max="99" segments="1" words="2" characters="12" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+        </analyse>
+    </file>
+    <file name="Animals ENgb.docx.sdlxliff" guid="5aeed333-7000-4d71-be0d-88831a203544">
+        <analyse>
+            <perfect segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <inContextExact segments="13" words="70" characters="414" placeables="23" tags="16" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <exact segments="1" words="4" characters="14" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <locked segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <crossFileRepeated segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <repeated segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <total segments="15" words="86" characters="493" placeables="27" tags="16" repairWords="0" fullRecallWords="8" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <new segments="1" words="12" characters="65" placeables="4" tags="0" repairWords="0" fullRecallWords="8" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <newBaseline segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <newLearnings segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <fuzzy min="50" max="74" segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <fuzzy min="75" max="84" segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <fuzzy min="85" max="94" segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <fuzzy min="95" max="99" segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <internalFuzzy min="50" max="74" segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <internalFuzzy min="75" max="84" segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <internalFuzzy min="85" max="94" segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <internalFuzzy min="95" max="99" segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+        </analyse>
+    </file>
+    <file name="answering machine.pptx.sdlxliff" guid="65362805-e11d-41d4-b4c6-bf5b5841ea23">
+        <analyse>
+            <perfect segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <inContextExact segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <exact segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <locked segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <crossFileRepeated segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <repeated segments="3" words="9" characters="40" placeables="4" tags="2" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <total segments="16" words="94" characters="441" placeables="33" tags="20" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <new segments="8" words="41" characters="196" placeables="13" tags="8" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <newBaseline segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <newLearnings segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <fuzzy min="50" max="74" segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <fuzzy min="75" max="84" segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <fuzzy min="85" max="94" segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <fuzzy min="95" max="99" segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <internalFuzzy min="50" max="74" segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <internalFuzzy min="75" max="84" segments="2" words="14" characters="73" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <internalFuzzy min="85" max="94" segments="3" words="30" characters="132" placeables="16" tags="10" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <internalFuzzy min="95" max="99" segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+        </analyse>
+    </file>
+    <file name="answering_machine_v2.pdf.sdlxliff" guid="5eb3a706-1724-445b-b220-176aa551e6b0">
+        <analyse>
+            <perfect segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <inContextExact segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <exact segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <locked segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <crossFileRepeated segments="2" words="14" characters="57" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <repeated segments="1" words="7" characters="28" placeables="3" tags="2" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <total segments="14" words="88" characters="406" placeables="29" tags="26" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <new segments="7" words="31" characters="147" placeables="12" tags="11" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <newBaseline segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <newLearnings segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <fuzzy min="50" max="74" segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <fuzzy min="75" max="84" segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <fuzzy min="85" max="94" segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <fuzzy min="95" max="99" segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <internalFuzzy min="50" max="74" segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <internalFuzzy min="75" max="84" segments="1" words="6" characters="39" placeables="3" tags="3" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <internalFuzzy min="85" max="94" segments="3" words="30" characters="135" placeables="11" tags="10" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <internalFuzzy min="95" max="99" segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+        </analyse>
+    </file>
+    <file name="Assault Rifle.txt.sdlxliff" guid="939875c6-b17f-4a8e-9780-4376ca28ed6f">
+        <analyse>
+            <perfect segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <inContextExact segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <exact segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <locked segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <crossFileRepeated segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <repeated segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <total segments="10" words="174" characters="901" placeables="5" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <new segments="10" words="174" characters="901" placeables="5" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <newBaseline segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <newLearnings segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <fuzzy min="50" max="74" segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <fuzzy min="75" max="84" segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <fuzzy min="85" max="94" segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <fuzzy min="95" max="99" segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <internalFuzzy min="50" max="74" segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <internalFuzzy min="75" max="84" segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <internalFuzzy min="85" max="94" segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <internalFuzzy min="95" max="99" segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+        </analyse>
+    </file>
+    <file name="Brochure.pdf.sdlxliff" guid="ecf99873-464b-4118-bae2-0a9025ea34ff">
+        <analyse>
+            <perfect segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <inContextExact segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <exact segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <locked segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <crossFileRepeated segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <repeated segments="6" words="12" characters="63" placeables="3" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <total segments="108" words="1303" characters="7843" placeables="59" tags="18" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <new segments="101" words="1290" characters="7761" placeables="55" tags="18" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <newBaseline segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <newLearnings segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <fuzzy min="50" max="74" segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <fuzzy min="75" max="84" segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <fuzzy min="85" max="94" segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <fuzzy min="95" max="99" segments="1" words="1" characters="19" placeables="1" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <internalFuzzy min="50" max="74" segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <internalFuzzy min="75" max="84" segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <internalFuzzy min="85" max="94" segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <internalFuzzy min="95" max="99" segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+        </analyse>
+    </file>
+    <file name="Clearing.xlsx.sdlxliff" guid="e35d8950-59ed-4756-8861-a30f15010d4a">
+        <analyse>
+            <perfect segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <inContextExact segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <exact segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <locked segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <crossFileRepeated segments="3" words="3" characters="24" placeables="3" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <repeated segments="56" words="56" characters="229" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <total segments="75" words="75" characters="338" placeables="3" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <new segments="16" words="16" characters="85" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <newBaseline segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <newLearnings segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <fuzzy min="50" max="74" segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <fuzzy min="75" max="84" segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <fuzzy min="85" max="94" segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <fuzzy min="95" max="99" segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <internalFuzzy min="50" max="74" segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <internalFuzzy min="75" max="84" segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <internalFuzzy min="85" max="94" segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <internalFuzzy min="95" max="99" segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+        </analyse>
+    </file>
+    <file name="Domestic cat.docx.sdlxliff" guid="1525b403-23b3-4852-b8ed-f34b2ae12df9">
+        <analyse>
+            <perfect segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <inContextExact segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <exact segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <locked segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <crossFileRepeated segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <repeated segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <total segments="14" words="15" characters="146" placeables="4" tags="3" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <new segments="13" words="14" characters="96" placeables="3" tags="3" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <newBaseline segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <newLearnings segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <fuzzy min="50" max="74" segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <fuzzy min="75" max="84" segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <fuzzy min="85" max="94" segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <fuzzy min="95" max="99" segments="1" words="1" characters="50" placeables="1" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <internalFuzzy min="50" max="74" segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <internalFuzzy min="75" max="84" segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <internalFuzzy min="85" max="94" segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <internalFuzzy min="95" max="99" segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+        </analyse>
+    </file>
+    <file name="GRANOLA COFFEE.pdf.sdlxliff" guid="d7792b38-1c9c-4123-abb2-4621e7e189df">
+        <analyse>
+            <perfect segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <inContextExact segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <exact segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <locked segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <crossFileRepeated segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <repeated segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <total segments="17" words="134" characters="684" placeables="99" tags="88" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <new segments="17" words="134" characters="684" placeables="99" tags="88" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <newBaseline segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <newLearnings segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <fuzzy min="50" max="74" segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <fuzzy min="75" max="84" segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <fuzzy min="85" max="94" segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <fuzzy min="95" max="99" segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <internalFuzzy min="50" max="74" segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <internalFuzzy min="75" max="84" segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <internalFuzzy min="85" max="94" segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <internalFuzzy min="95" max="99" segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+        </analyse>
+    </file>
+    <file name="M16.doc.sdlxliff" guid="d3661e7a-d1c7-4dc3-9479-f55829e84e17">
+        <analyse>
+            <perfect segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <inContextExact segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <exact segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <locked segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <crossFileRepeated segments="10" words="14" characters="67" placeables="9" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <repeated segments="21" words="35" characters="372" placeables="17" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <total segments="78" words="280" characters="2262" placeables="90" tags="25" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <new segments="29" words="211" characters="1133" placeables="48" tags="25" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <newBaseline segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <newLearnings segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <fuzzy min="50" max="74" segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <fuzzy min="75" max="84" segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <fuzzy min="85" max="94" segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <fuzzy min="95" max="99" segments="16" words="16" characters="665" placeables="16" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <internalFuzzy min="50" max="74" segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <internalFuzzy min="75" max="84" segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <internalFuzzy min="85" max="94" segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <internalFuzzy min="95" max="99" segments="2" words="4" characters="25" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+        </analyse>
+    </file>
+    <file name="MSBS Radon.docx.sdlxliff" guid="91c527d8-de99-4afe-b6bc-4ee49e80588d">
+        <analyse>
+            <perfect segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <inContextExact segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <exact segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <locked segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <crossFileRepeated segments="7" words="13" characters="180" placeables="4" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <repeated segments="1" words="2" characters="13" placeables="2" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <total segments="44" words="286" characters="2114" placeables="63" tags="26" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <new segments="25" words="260" characters="1395" placeables="46" tags="26" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <newBaseline segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <newLearnings segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <fuzzy min="50" max="74" segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <fuzzy min="75" max="84" segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <fuzzy min="85" max="94" segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <fuzzy min="95" max="99" segments="11" words="11" characters="526" placeables="11" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <internalFuzzy min="50" max="74" segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <internalFuzzy min="75" max="84" segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <internalFuzzy min="85" max="94" segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <internalFuzzy min="95" max="99" segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+        </analyse>
+    </file>
+    <batchTotal>
+        <analyse>
+            <perfect segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <inContextExact segments="13" words="70" characters="414" placeables="23" tags="16" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <exact segments="1" words="4" characters="14" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <locked segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <crossFileRepeated segments="22" words="44" characters="328" placeables="16" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <repeated segments="99" words="140" characters="900" placeables="36" tags="4" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <total segments="458" words="2846" characters="17883" placeables="478" tags="240" repairWords="0" fullRecallWords="8" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <new segments="265" words="2454" characters="13893" placeables="329" tags="197" repairWords="0" fullRecallWords="8" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <newBaseline segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <newLearnings segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <fuzzy min="50" max="74" segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <fuzzy min="75" max="84" segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <fuzzy min="85" max="94" segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <fuzzy min="95" max="99" segments="44" words="44" characters="1894" placeables="44" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <internalFuzzy min="50" max="74" segments="0" words="0" characters="0" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <internalFuzzy min="75" max="84" segments="3" words="20" characters="112" placeables="3" tags="3" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <internalFuzzy min="85" max="94" segments="8" words="64" characters="291" placeables="27" tags="20" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+            <internalFuzzy min="95" max="99" segments="3" words="6" characters="37" placeables="0" tags="0" repairWords="0" fullRecallWords="0" partialRecallWords="0" edits="0" adaptiveWords="0" baselineWords="0" />
+        </analyse>
+    </batchTotal>
+</task>

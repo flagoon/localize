@@ -1,19 +1,13 @@
 import { createContext } from 'react';
-import parse from 'xml-parser';
 
-export const InitialReportFile: parse.Document = {
-  root: {
-    attributes: { name: '' },
-    children: [],
-    content: '',
-    name: '',
-  },
-  declaration: { attributes: { name: 'analyse' } },
+export const InitialReportContent: ReportData = {
+  taskInfo: {},
+  fileInfoAndBatch: {},
 };
 
-let ReportContext = createContext<ReportContextInterface>({
-  file: InitialReportFile,
+const ReportContext = createContext<ReportContextInterface>({
+  reportContent: InitialReportContent,
   updateFile: () => {},
+  transformingParsedXMLIntoObject: () => {},
 });
-
 export default ReportContext;
