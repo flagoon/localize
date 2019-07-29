@@ -1,18 +1,9 @@
-import React, { ChangeEvent, useContext, useEffect } from 'react';
+import React, { ChangeEvent, useContext } from 'react';
 import { FileInput, FileLabel } from './FileReaderInput.styled';
 import ReportContext from '../../Context/ReportContext';
 
 export default function FileReaderInput(): JSX.Element {
-  const { transformingParsedXMLIntoObject, reportContent } = useContext(
-    ReportContext,
-  );
-
-  useEffect(() => {
-    const total = reportContent.fileInfoAndBatch.batchTotal
-      ? reportContent.fileInfoAndBatch.batchTotal
-      : 'No BatchTotal';
-    console.log(total);
-  }, [reportContent]);
+  const { transformingParsedXMLIntoObject } = useContext(ReportContext);
 
   const handleChange = (e: ChangeEvent<HTMLInputElement>): void => {
     const fileReader: FileReader = new FileReader();
