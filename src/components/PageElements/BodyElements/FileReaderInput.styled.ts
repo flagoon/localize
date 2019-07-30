@@ -10,6 +10,7 @@ export const FileInput = styled.input`
 `;
 
 export const FileLabel = styled.label`
+  display: block;
   padding: 0.5rem;
   background-color: lightblue;
   border: 1px solid blue;

@@ -1,12 +1,11 @@
 import React from 'react';
 import { PageElementWrapper } from './PageElement.styled';
-import FileReaderInput from './BodyElements/FileReaderInput';
+import CalcOptions from './BodyElements/CalcOptionsContainer/CalcOptions';
 
 function Body(): JSX.Element {
   return (
     <PageElementWrapper>
-      <FileReaderInput />
-      <div>IM Body</div>
+      <CalcOptions />
     </PageElementWrapper>
   );
 }
