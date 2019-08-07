@@ -1,11 +1,11 @@
 import React from 'react';
 import { PageElementWrapper } from './PageElement.styled';
-import CalcOptions from './BodyElements/CalcOptionsContainer/CalcOptions';
+import ProjectOptions from './ProjectOptions/ProjectOptions';
 
 function Body(): JSX.Element {
   return (
     <PageElementWrapper>
-      <CalcOptions />
+      <ProjectOptions />
     </PageElementWrapper>
   );
 }
