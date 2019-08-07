@@ -1,6 +1,17 @@
 import styled from 'styled-components';
+import React, { useContext } from 'react';
+import CalcTypeContext from '../Context/CalcTypeContext';
 
-const StickyBar = styled.div`
+function StickyBar(): JSX.Element {
+  const { calcType } = useContext(CalcTypeContext);
+  return (
+    <StyledStickyBar>
+      How many words? {calcType ? '- tłumaczenie' : '- korekta'}
+    </StyledStickyBar>
+  );
+}
+
+const StyledStickyBar = styled.div`
   display: flex;
   justify-content: space-between;
   height: 3rem;
