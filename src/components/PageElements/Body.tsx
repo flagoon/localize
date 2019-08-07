@@ -1,11 +1,17 @@
 import React from 'react';
+import Grid from '@material-ui/core/Grid';
+
+import CalculationTable from './Table/Table';
 import { PageElementWrapper } from './PageElement.styled';
-import CalcOptions from './BodyElements/CalcOptionsContainer/CalcOptions';
+import { ProjectOptions } from './ProjectOptions';
 
 function Body(): JSX.Element {
   return (
     <PageElementWrapper>
-      <CalcOptions />
+      <Grid container direction="row" spacing={2}>
+        <ProjectOptions />
+        <CalculationTable />
+      </Grid>
     </PageElementWrapper>
   );
 }

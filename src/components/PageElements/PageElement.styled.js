@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const PageElementWrapper = styled.div`
-  color: #555;
+  color: #333;
   font-size: 1.2rem;
   padding: 4rem;
   margin: 4rem auto;

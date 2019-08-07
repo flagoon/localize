@@ -1,6 +1,18 @@
 import styled from 'styled-components';
+import React, { useContext } from 'react';
+import ReportContext from '@Context/ReportContext';
 
-const StickyBar = styled.div`
+function StickyBar(): JSX.Element {
+  const { reportContent } = useContext(ReportContext);
+  console.log(reportContent);
+  return (
+    <StyledStickyBar>
+      How many words? {reportContent ? '- tłumaczenie' : '- korekta'}
+    </StyledStickyBar>
+  );
+}
+
+const StyledStickyBar = styled.div`
   display: flex;
   justify-content: space-between;
   height: 3rem;
@@ -11,10 +23,9 @@ const StickyBar = styled.div`
   font-weight: bold;
   position: sticky;
   top: 0;
-
-  & img {
-    height: 3rem;
-  }
+  overflow: hidden;
+  white-space: nowrap;
+  z-index: 100;
 `;
 
 export default StickyBar;

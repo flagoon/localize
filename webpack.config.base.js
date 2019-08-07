@@ -13,6 +13,10 @@ module.exports = {
     extensions: ['.ts', '.tsx', '.js', '.json'],
     alias: {
       'react-dom': '@hot-loader/react-dom',
+      '@Context': path.resolve(__dirname, 'src/components/Context'),
+      '@Components': path.resolve(__dirname, 'src/components'),
+      '@Assets': path.resolve(__dirname, 'src/assets'),
+      '@Utils': path.resolve(__dirname, 'src/utils'),
     },
   },
   module: {

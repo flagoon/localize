@@ -2,7 +2,6 @@ import React from 'react';
 import { PageElementWrapper } from './PageElement.styled';
 import LocalizeLogo from '../../assets/baner-localizepl.png';
 import StyledOutsideLink from './CommonElements/OutsideLink';
-import CalcTypeForm from './HeaderElements/CalcTypeForm';
 
 function Header(): JSX.Element {
   return (
@@ -23,7 +22,6 @@ function Header(): JSX.Element {
         >
           FAQ
         </StyledOutsideLink>
-        <CalcTypeForm />
       </div>
     </PageElementWrapper>
   );
