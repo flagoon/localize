@@ -1,4 +1,6 @@
-import React, { SyntheticEvent, useState } from 'react';
+import React, { SyntheticEvent, useState, useContext } from 'react';
+import FileReaderInput from '../BodyElements/FileReaderInput';
+import ReportContext from '../../Context/ReportContext';
 
 type Fuzzy = 'include' | 'noInclude';
 type CountingType = 'correction' | 'translation';
@@ -26,22 +28,27 @@ function ProjectOptions(): JSX.Element {
     wordCount: 0,
     wordCountValue: 0,
   });
+
   function handleChange(e: SyntheticEvent<HTMLInputElement>): void {
     const { name, value } = e.currentTarget;
     const newOptions = { ...formValue, [name]: value };
     setFormValue(newOptions);
   }
 
+  const { reportContent } = useContext(ReportContext);
+  console.log(reportContent);
+
   return (
-    <>
+    <div style={{ display: 'flex', border: '1px solid green' }}>
       <div
         style={{
           display: 'flex',
           flexDirection: 'column',
           border: '1px solid red',
+          width: '30rem',
         }}
       >
-        Wyceń element:
+        <div>Wyceń analizę:</div>
         <div style={{ display: 'flex', flexDirection: 'column' }}>
           <label htmlFor="translation">
             <input
@@ -52,7 +59,7 @@ function ProjectOptions(): JSX.Element {
               onChange={handleChange}
               checked={formValue.countingType === 'translation' ? true : false}
             />
-            Tłumaczenie
+            <span>Tłumaczenie</span>
           </label>
           <label htmlFor="correction">
             <input
@@ -63,12 +70,12 @@ function ProjectOptions(): JSX.Element {
               onChange={handleChange}
               checked={formValue.countingType === 'correction' ? true : false}
             />
-            Korekta
+            <span>Korekta</span>
           </label>
         </div>
         <div>
           <label htmlFor="currency">
-            Wyceń w:
+            <div>Wyceń w:</div>
             <input
               name="currency"
               type="text"
@@ -78,7 +85,7 @@ function ProjectOptions(): JSX.Element {
           </label>
         </div>
         <div>
-          Ustawienie internal fuzzy:
+          <div>Ustawienie internal fuzzy:</div>
           <div style={{ display: 'flex', flexDirection: 'column' }}>
             <label htmlFor="include">
               <input
@@ -89,7 +96,7 @@ function ProjectOptions(): JSX.Element {
                 checked={formValue.fuzzy === 'include' ? true : false}
                 onChange={handleChange}
               />
-              Internal fuzzy licz jak zwykłe fuzzy
+              <span>Internal fuzzy licz jak zwykłe fuzzy</span>
             </label>
             <label htmlFor="noInclude">
               <input
@@ -100,12 +107,12 @@ function ProjectOptions(): JSX.Element {
                 onChange={handleChange}
                 checked={formValue.fuzzy === 'noInclude' ? true : false}
               />
-              Nie uwzględniaj internal fuzzy
+              <span>Nie uwzględniaj internal fuzzy</span>
             </label>
           </div>
         </div>
         <div>
-          Pokazuj jako:
+          <div>Pokazuj jako:</div>
           <div style={{ display: 'flex', flexDirection: 'column' }}>
             <label htmlFor="showAsWords">
               <input
@@ -116,7 +123,7 @@ function ProjectOptions(): JSX.Element {
                 checked={formValue.showAs === 'words' ? true : false}
                 onChange={handleChange}
               />
-              Słowa
+              <span>Słowa</span>
             </label>
             <label htmlFor="showAsCharacters">
               <input
@@ -127,13 +134,13 @@ function ProjectOptions(): JSX.Element {
                 checked={formValue.showAs === 'characters' ? true : false}
                 onChange={handleChange}
               />
-              Kwoty
+              <span>Kwoty</span>
             </label>
           </div>
         </div>
         <div>
           <label htmlFor="wordCountValue">
-            Stawka za słowo
+            <div>Stawka za słowo</div>
             <input
               name="wordCountValue"
               type="number"
@@ -144,7 +151,7 @@ function ProjectOptions(): JSX.Element {
         </div>
         <div>
           <label htmlFor="wordCount">
-            Dzienna wydajność
+            <div>Dzienna wydajność</div>
             <input
               name="wordCount"
               type="number"
@@ -155,7 +162,7 @@ function ProjectOptions(): JSX.Element {
         </div>
         <div>
           <label htmlFor="pageWordCount">
-            Ilość słów na 1 str.
+            <div>Ilość słów na 1 str.</div>
             <input
               name="pageWordCount"
               type="number"
@@ -166,7 +173,7 @@ function ProjectOptions(): JSX.Element {
         </div>
         <div>
           <label htmlFor="pageCharacterCount">
-            Ilość znaków na 1 str.
+            <div>Ilość znaków na 1 str.</div>
             <input
               name="pageCharacterCount"
               type="number"
@@ -175,15 +182,39 @@ function ProjectOptions(): JSX.Element {
             />
           </label>
         </div>
+        <div style={{ display: 'flex', flexDirection: 'column' }}>
+          <button onClick={() => console.log(formValue)}>
+            Zapisz opcje do pliku
+          </button>
+          <button>Zapisz opcje do bazy przeglądarki</button>
+          <button>Wczytaj opcje do pliki</button>
+        </div>
       </div>
-      <div style={{ display: 'flex', flexDirection: 'column' }}>
-        <button onClick={() => console.log(formValue)}>
-          Zapisz opcje do pliku
-        </button>
-        <button>Zapisz opcje do bazy przeglądarki</button>
-        <button>Wczytaj opcje do pliki</button>
+      <div style={{ border: '1px solid yellow', width: '100%' }}>
+        <FileReaderInput />
+        {reportContent.taskInfo.project
+          ? reportContent.taskInfo.project
+          : 'Test'}
+        <table>
+          <thead>
+            <tr>
+              <th>Costam</th>
+              <th>Costam2</th>
+              <th>Costam3</th>
+              <th>Costam4</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Costam</td>
+              <td>Costam2</td>
+              <td>Costam3</td>
+              <td>Costam4</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
-    </>
+    </div>
   );
 }
 
