@@ -1,6 +1,7 @@
 import React, { SyntheticEvent, useState, useContext } from 'react';
 import FileReaderInput from '../BodyElements/FileReaderInput';
 import ReportContext from '../../Context/ReportContext';
+import CalculationTable from '../Table/Table';
 
 type Fuzzy = 'include' | 'noInclude';
 type CountingType = 'correction' | 'translation';
@@ -192,27 +193,7 @@ function ProjectOptions(): JSX.Element {
       </div>
       <div style={{ border: '1px solid yellow', width: '100%' }}>
         <FileReaderInput />
-        {reportContent.taskInfo.project
-          ? reportContent.taskInfo.project
-          : 'Test'}
-        <table>
-          <thead>
-            <tr>
-              <th>Costam</th>
-              <th>Costam2</th>
-              <th>Costam3</th>
-              <th>Costam4</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Costam</td>
-              <td>Costam2</td>
-              <td>Costam3</td>
-              <td>Costam4</td>
-            </tr>
-          </tbody>
-        </table>
+        {reportContent.taskInfo.project ? <CalculationTable /> : 'Test'}
       </div>
     </div>
   );
