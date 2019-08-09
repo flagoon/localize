@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import React, { useContext } from 'react';
-import CalcTypeContext from '../Context/CalcTypeContext';
+import CalcTypeContext from '@Context/CalcTypeContext';
 
 function StickyBar(): JSX.Element {
   const { calcType } = useContext(CalcTypeContext);
