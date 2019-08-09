@@ -22,6 +22,8 @@ const StyledStickyBar = styled.div`
   font-weight: bold;
   position: sticky;
   top: 0;
+  overflow: hidden;
+  white-space: nowrap;
 
   & img {
     height: 3rem;

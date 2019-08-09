@@ -2,6 +2,7 @@ import React, { SyntheticEvent, useState, useContext } from 'react';
 import FileReaderInput from '../BodyElements/FileReaderInput';
 import ReportContext from '../../Context/ReportContext';
 import CalculationTable from '../Table/Table';
+import RadioInput from '../CommonElements/RadioInput';
 
 type Fuzzy = 'include' | 'noInclude';
 type CountingType = 'correction' | 'translation';
@@ -31,6 +32,7 @@ function ProjectOptions(): JSX.Element {
   });
 
   function handleChange(e: SyntheticEvent<HTMLInputElement>): void {
+    console.log('handle');
     const { name, value } = e.currentTarget;
     const newOptions = { ...formValue, [name]: value };
     setFormValue(newOptions);
@@ -50,30 +52,12 @@ function ProjectOptions(): JSX.Element {
         }}
       >
         <div>Wyceń analizę:</div>
-        <div style={{ display: 'flex', flexDirection: 'column' }}>
-          <label htmlFor="translation">
-            <input
-              type="radio"
-              name="countingType"
-              id="translation"
-              value="translation"
-              onChange={handleChange}
-              checked={formValue.countingType === 'translation' ? true : false}
-            />
-            <span>Tłumaczenie</span>
-          </label>
-          <label htmlFor="correction">
-            <input
-              type="radio"
-              name="countingType"
-              id="correction"
-              value="correction"
-              onChange={handleChange}
-              checked={formValue.countingType === 'correction' ? true : false}
-            />
-            <span>Korekta</span>
-          </label>
-        </div>
+        <RadioInput
+          checked={formValue.countingType}
+          inputArray={{ translation: 'Tłumaczenie', correction: 'Korekta' }}
+          onChange={handleChange}
+          name={'countingType'}
+        />
         <div>
           <label htmlFor="currency">
             <div>Wyceń w:</div>
@@ -87,57 +71,24 @@ function ProjectOptions(): JSX.Element {
         </div>
         <div>
           <div>Ustawienie internal fuzzy:</div>
-          <div style={{ display: 'flex', flexDirection: 'column' }}>
-            <label htmlFor="include">
-              <input
-                type="radio"
-                name="fuzzy"
-                id="include"
-                value="include"
-                checked={formValue.fuzzy === 'include' ? true : false}
-                onChange={handleChange}
-              />
-              <span>Internal fuzzy licz jak zwykłe fuzzy</span>
-            </label>
-            <label htmlFor="noInclude">
-              <input
-                type="radio"
-                name="fuzzy"
-                id="noInclude"
-                value="noInclude"
-                onChange={handleChange}
-                checked={formValue.fuzzy === 'noInclude' ? true : false}
-              />
-              <span>Nie uwzględniaj internal fuzzy</span>
-            </label>
-          </div>
+          <RadioInput
+            checked={formValue.fuzzy}
+            name="fuzzy"
+            inputArray={{
+              include: 'Internal fuzzy licz jak zwykłe fuzzy',
+              noInclude: 'Nie uwzględniaj internal fuzzy',
+            }}
+            onChange={handleChange}
+          />
         </div>
         <div>
           <div>Pokazuj jako:</div>
-          <div style={{ display: 'flex', flexDirection: 'column' }}>
-            <label htmlFor="showAsWords">
-              <input
-                type="radio"
-                name="showAs"
-                id="showAsWords"
-                value="words"
-                checked={formValue.showAs === 'words' ? true : false}
-                onChange={handleChange}
-              />
-              <span>Słowa</span>
-            </label>
-            <label htmlFor="showAsCharacters">
-              <input
-                type="radio"
-                name="showAs"
-                id="showAsCharacters"
-                value="characters"
-                checked={formValue.showAs === 'characters' ? true : false}
-                onChange={handleChange}
-              />
-              <span>Kwoty</span>
-            </label>
-          </div>
+          <RadioInput
+            inputArray={{ showAsWords: 'Słowa', showAsCharacters: 'Kwoty' }}
+            onChange={handleChange}
+            name="showAs"
+            checked={formValue.showAs}
+          />
         </div>
         <div>
           <label htmlFor="wordCountValue">
