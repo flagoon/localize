@@ -1,8 +1,11 @@
 import React, { useContext } from 'react';
+import Grid from '@material-ui/core/Grid';
 import ReportContext from '@Context/ReportContext';
+import FileReaderInput from '../BodyElements/FileReaderInput';
 
-function CalculationTable(): JSX.Element {
-  return (
+function CalculationTable(): JSX.Element | null {
+  const { reportContent } = useContext(ReportContext);
+  const ProjectTable = (
     <table>
       <thead>
         <tr>
@@ -26,6 +29,12 @@ function CalculationTable(): JSX.Element {
         <TableRow rowFor="total" name="Total" />
       </tbody>
     </table>
+  );
+  return (
+    <Grid item xs={12} sm={6} md={8}>
+      <FileReaderInput />
+      {reportContent.taskInfo.project ? ProjectTable : null}
+    </Grid>
   );
 }
 // TODO: fix interface

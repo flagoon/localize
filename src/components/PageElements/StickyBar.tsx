@@ -1,12 +1,13 @@
 import styled from 'styled-components';
 import React, { useContext } from 'react';
-import CalcTypeContext from '@Context/CalcTypeContext';
+import ReportContext from '@Context/ReportContext';
 
 function StickyBar(): JSX.Element {
-  const { calcType } = useContext(CalcTypeContext);
+  const { reportContent } = useContext(ReportContext);
+  console.log(reportContent);
   return (
     <StyledStickyBar>
-      How many words? {calcType ? '- tłumaczenie' : '- korekta'}
+      How many words? {reportContent ? '- tłumaczenie' : '- korekta'}
     </StyledStickyBar>
   );
 }
@@ -24,10 +25,7 @@ const StyledStickyBar = styled.div`
   top: 0;
   overflow: hidden;
   white-space: nowrap;
-
-  & img {
-    height: 3rem;
-  }
+  z-index: 100;
 `;
 
 export default StickyBar;
