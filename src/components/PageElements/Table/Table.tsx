@@ -1,4 +1,4 @@
-import React, { useContext, useState, ChangeEvent } from 'react';
+import React, { useContext, ChangeEvent, useState } from 'react';
 import Grid from '@material-ui/core/Grid';
 import ReportContext from '@Context/ReportContext';
 import FileReaderInput from '../BodyElements/FileReaderInput';
@@ -11,44 +11,14 @@ import TableRow from '@material-ui/core/TableRow';
 import FormControl from '@material-ui/core/FormControl';
 import TextField from '@material-ui/core/TextField';
 
-function CalculationTable(): JSX.Element | null {
-  const { reportContent } = useContext(ReportContext);
-
-  interface TableInputs {
-    perfect: string;
-    inContextExact: string;
-    exact: string;
-    locked: string;
-    repeated: string;
-    new: string;
-    fuzzy50: string;
-    fuzzy75: string;
-    fuzzy85: string;
-    fuzzy95: string;
-    total: string;
-  }
-
-  const tableInput: TableInputs = {
-    perfect: '',
-    inContextExact: '',
-    exact: '',
-    locked: '',
-    repeated: '',
-    new: '',
-    fuzzy50: '',
-    fuzzy75: '',
-    fuzzy85: '',
-    fuzzy95: '',
-    total: '',
-  };
-
-  const [cellValue, setCellValue] = useState<TableInputs>(tableInput);
-
-  const setValue = (value: string, cellName: keyof TableInputs): void => {
-    const testValue = Number(value);
-    const newValue = isNaN(testValue) ? cellValue[cellName] : Number(testValue);
-    setCellValue({ ...cellValue, [cellName]: newValue });
-  };
+function CalculationTable({
+  tableValues,
+  handleChange,
+}: {
+  tableValues: AttributesObject;
+  handleChange: (value: string, cellName: keyof AttributesObject) => void;
+}): JSX.Element | null {
+  const [isShown, toggleIsShown] = useState<$TSFixMe>(false);
 
   const ProjectTable = (
     <Table>
@@ -62,68 +32,68 @@ function CalculationTable(): JSX.Element | null {
       </TableHead>
       <TableBody>
         <TableRows
-          onChangeHandler={setValue}
-          cellValue={cellValue.perfect}
+          onChangeHandler={handleChange}
+          cellValue={tableValues.perfect}
           rowFor="perfect"
           name="Perfect"
         />
         <TableRows
-          onChangeHandler={setValue}
-          cellValue={cellValue.inContextExact}
+          onChangeHandler={handleChange}
+          cellValue={tableValues.inContextExact}
           rowFor="inContextExact"
           name="Context match"
         />
         <TableRows
-          onChangeHandler={setValue}
-          cellValue={cellValue.exact}
+          onChangeHandler={handleChange}
+          cellValue={tableValues.exact}
           rowFor="exact"
           name="Exact"
         />
         <TableRows
-          onChangeHandler={setValue}
-          cellValue={cellValue.locked}
+          onChangeHandler={handleChange}
+          cellValue={tableValues.locked}
           rowFor="locked"
           name="Locked"
         />
         <TableRows
-          onChangeHandler={setValue}
-          cellValue={cellValue.repeated}
+          onChangeHandler={handleChange}
+          cellValue={tableValues.repeated}
           rowFor="repeated"
           name="Repeated"
         />
         <TableRows
-          onChangeHandler={setValue}
-          cellValue={cellValue.new}
+          onChangeHandler={handleChange}
+          cellValue={tableValues.new}
           rowFor="new"
           name="New"
         />
         <TableRows
-          onChangeHandler={setValue}
-          cellValue={cellValue.fuzzy50}
+          onChangeHandler={handleChange}
+          cellValue={tableValues.fuzzy50}
           rowFor="fuzzy50"
           name="Fuzzy 50-74%"
         />
         <TableRows
-          onChangeHandler={setValue}
-          cellValue={cellValue.fuzzy75}
+          onChangeHandler={handleChange}
+          cellValue={tableValues.fuzzy75}
           rowFor="fuzzy75"
           name="Fuzzy 75-84%"
         />
         <TableRows
-          onChangeHandler={setValue}
-          cellValue={cellValue.fuzzy85}
+          onChangeHandler={handleChange}
+          cellValue={tableValues.fuzzy85}
           rowFor="fuzzy85"
           name="Fuzzy 85-94%"
         />
         <TableRows
-          onChangeHandler={setValue}
-          cellValue={cellValue.fuzzy95}
+          onChangeHandler={handleChange}
+          cellValue={tableValues.fuzzy95}
           rowFor="fuzzy95"
           name="Fuzzy 95-99%"
         />
         <TableRows
-          onChangeHandler={setValue}
-          cellValue={cellValue.total}
+          onChangeHandler={handleChange}
+          cellValue={tableValues.total}
           rowFor="total"
           name="Total"
         />
@@ -132,31 +102,43 @@ function CalculationTable(): JSX.Element | null {
   );
   return (
     <Grid item xs={12} sm={6} md={8}>
-      <FileReaderInput />
-      {reportContent.taskInfo.project ? ProjectTable : null}
+      <FileReaderInput toggleIsShown={toggleIsShown} />
+      {isShown ? ProjectTable : null}
     </Grid>
   );
 }
-// TODO: fix interface
+
+interface TableRowsProps {
+  rowFor: keyof AttributesObject;
+  name: string;
+  cellValue: number;
+  onChangeHandler: (value: string, cellName: keyof AttributesObject) => void;
+}
+
 function TableRows({
   rowFor,
   name,
   cellValue,
   onChangeHandler,
-}: $TSFixMe): JSX.Element {
+}: TableRowsProps): JSX.Element {
   const { reportContent } = useContext(ReportContext);
   const { fileInfoAndBatch } = reportContent;
 
   const updatePercents = (e: ChangeEvent<HTMLInputElement>): void => {
     const { name, value } = e.currentTarget;
-    onChangeHandler(value, name);
+    onChangeHandler(value, name as keyof AttributesObject);
   };
+
+  const numberOfWords =
+    fileInfoAndBatch && fileInfoAndBatch.batchTotal
+      ? fileInfoAndBatch.batchTotal[rowFor].words
+      : 0;
 
   return (
     <TableRow>
       <TableCell align="right">{name}</TableCell>
       <TableCell align="right">
-        {fileInfoAndBatch.batchTotal[rowFor].words}
+        {numberOfWords ? fileInfoAndBatch.batchTotal[rowFor].words : ''}
       </TableCell>
       {rowFor !== 'total' ? (
         <>
@@ -166,19 +148,24 @@ function TableRows({
                 error={cellValue > 100 || cellValue < 0}
                 helperText={
                   cellValue > 100 || cellValue < 0
-                    ? 'Wartość musi mieścić się w przedziale od 0-100'
-                    : ''
+                    ? 'Podana liczba powinna być z przedziału 0-100.'
+                    : null
                 }
                 name={rowFor}
                 onChange={updatePercents}
-                style={{ width: '20rem' }}
+                style={{
+                  width: cellValue > 100 || cellValue < 0 ? '10rem' : '5rem',
+                  textAlign: 'right',
+                }}
                 placeholder={'0-100%'}
                 value={cellValue}
               />
             </FormControl>
           </TableCell>
           <TableCell align="right" style={{ width: '5rem' }}>
-            {(cellValue * fileInfoAndBatch.batchTotal[rowFor].words) / 100}
+            {numberOfWords
+              ? (cellValue * fileInfoAndBatch.batchTotal[rowFor].words) / 100
+              : 0}
           </TableCell>
         </>
       ) : null}

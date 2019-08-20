@@ -1,8 +1,12 @@
-import React, { ChangeEvent, useContext } from 'react';
+import React, { ChangeEvent, useContext, Dispatch } from 'react';
 import { FileInput, FileLabel } from './FileReaderInput.styled';
 import ReportContext from '../../Context/ReportContext';
 
-export default function FileReaderInput(): JSX.Element {
+export default function FileReaderInput({
+  toggleIsShown,
+}: {
+  toggleIsShown: Dispatch<boolean>;
+}): JSX.Element {
   const { transformingParsedXMLIntoObject } = useContext(ReportContext);
 
   const handleChange = (e: ChangeEvent<HTMLInputElement>): void => {
@@ -15,6 +19,7 @@ export default function FileReaderInput(): JSX.Element {
       transformingParsedXMLIntoObject(fileReader.result as string);
     };
     fileReader.readAsText(file);
+    toggleIsShown(true);
   };
 
   return (

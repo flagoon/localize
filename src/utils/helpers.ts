@@ -33,7 +33,7 @@ const transformReportDataFromFileToObject = (
  */
 const assignAttributesToFilesAndTotal = (
   fileData: parseNode[],
-): ReportFileData =>
+): AttributesObject =>
   fileData.reduce((acc: parseNode, data) => {
     if (data.name !== 'taskInfo' && data.name !== 'batchTotal') {
       acc[data.attributes['name']] = transformReportDataFromFileToObject(

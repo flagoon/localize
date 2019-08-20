@@ -34,13 +34,12 @@ declare interface ReportContextInterface {
   transformingParsedXMLIntoObject: (reportContent: string) => void;
 }
 
+declare interface ReportFileData {
+  [key: string]: parseAttributes;
+}
 declare interface ReportData {
   taskInfo: StringObject;
   fileInfoAndBatch: ReportFileData;
-}
-
-declare interface ReportFileData {
-  [key: string]: AttributesObject;
 }
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any

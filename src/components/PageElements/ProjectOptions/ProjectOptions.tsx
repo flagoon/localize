@@ -1,49 +1,15 @@
-import React, { useState, ChangeEvent } from 'react';
+import React from 'react';
 
 import RadioButton from './RadioButton';
 
-import Button from '@material-ui/core/Button';
 import TextField from '@material-ui/core/TextField';
-import Grid from '@material-ui/core/Grid';
 
-type Fuzzy = 'include' | 'noInclude';
-type CountingType = 'correction' | 'translation';
-type ShowAs = 'characters' | 'words';
-
-interface State {
-  countingType: CountingType;
-  currency: string;
-  fuzzy: Fuzzy;
-  pageCharacterCount: number;
-  pageWordCount: number;
-  showAs: ShowAs;
-  wordCount: number;
-  wordCountValue: number;
-}
-
-function ProjectOptions(): JSX.Element {
-  const [formValue, setFormValue] = useState<State>({
-    countingType: 'translation',
-    currency: 'PLN',
-    fuzzy: 'include',
-    pageCharacterCount: 0,
-    pageWordCount: 0,
-    showAs: 'words',
-    wordCount: 0,
-    wordCountValue: 0,
-  });
-
-  function handleChange(e: ChangeEvent<HTMLInputElement>): void {
-    const { name, value } = e.currentTarget;
-    const newOptions = { ...formValue, [name]: value };
-    setFormValue(newOptions);
-  }
-
+function ProjectOptions({ handleChange, options }: $TSFixMe): JSX.Element {
   return (
-    <Grid item xs={12} md={4} sm={6} container direction="column">
+    <>
       <RadioButton
         row={true}
-        formValue={formValue.countingType}
+        formValue={options.countingType}
         formLabel="Wyceń analizę"
         handleChange={handleChange}
         name="countingType"
@@ -67,11 +33,11 @@ function ProjectOptions(): JSX.Element {
         name="currency"
         autoComplete="current-password"
         onChange={handleChange}
-        value={formValue.currency}
+        value={options.currency}
       />
 
       <RadioButton
-        formValue={formValue.fuzzy}
+        formValue={options.fuzzy}
         formLabel="Ustawienie internal fuzzy:"
         handleChange={handleChange}
         name="fuzzy"
@@ -90,7 +56,7 @@ function ProjectOptions(): JSX.Element {
 
       <RadioButton
         row={true}
-        formValue={formValue.showAs}
+        formValue={options.showAs}
         formLabel="Pokazuj jako:"
         handleChange={handleChange}
         name="showAs"
@@ -113,7 +79,7 @@ function ProjectOptions(): JSX.Element {
         name="wordCountValue"
         inputProps={{ min: '0', step: '1' }}
         onChange={handleChange}
-        value={formValue.wordCountValue}
+        value={options.wordCountValue}
       />
       <TextField
         style={{ marginBottom: '1rem' }}
@@ -122,7 +88,7 @@ function ProjectOptions(): JSX.Element {
         name="wordCount"
         inputProps={{ min: '0', step: '1' }}
         onChange={handleChange}
-        value={formValue.wordCount}
+        value={options.wordCount}
       />
       <TextField
         style={{ marginBottom: '1rem' }}
@@ -131,7 +97,7 @@ function ProjectOptions(): JSX.Element {
         name="pageWordCount"
         inputProps={{ min: '0', step: '1' }}
         onChange={handleChange}
-        value={formValue.pageWordCount}
+        value={options.pageWordCount}
       />
       <TextField
         style={{ marginBottom: '1rem' }}
@@ -140,32 +106,9 @@ function ProjectOptions(): JSX.Element {
         name="pageCharacterCount"
         inputProps={{ min: '0', step: '1' }}
         onChange={handleChange}
-        value={formValue.pageCharacterCount}
+        value={options.pageCharacterCount}
       />
-
-      <Grid container direction="row">
-        <Grid item xs={12}>
-          <Button
-            fullWidth
-            variant="contained"
-            color="primary"
-            onClick={() => console.log(formValue)}
-          >
-            Zapisz opcje do pliku
-          </Button>
-        </Grid>
-        <Grid item xs={12}>
-          <Button fullWidth variant="contained" color="primary">
-            Zapisz w przeglądarce
-          </Button>
-        </Grid>
-        <Grid item xs={12}>
-          <Button fullWidth variant="contained" color="primary">
-            Wczytaj opcje z pliku
-          </Button>
-        </Grid>
-      </Grid>
-    </Grid>
+    </>
   );
 }
 
