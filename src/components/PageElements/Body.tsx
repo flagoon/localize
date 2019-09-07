@@ -5,21 +5,6 @@ import CalculationTable from './Table/Table';
 import { PageElementWrapper } from './PageElement.styled';
 import { ProjectOptions, SaveButtons } from './ProjectOptions';
 
-type Fuzzy = 'include' | 'noInclude';
-type CountingType = 'correction' | 'translation';
-type ShowAs = 'characters' | 'words';
-
-interface OptionState {
-  countingType: CountingType;
-  currency: string;
-  fuzzy: Fuzzy;
-  pageCharacterCount: number;
-  pageWordCount: number;
-  showAs: ShowAs;
-  wordCount: number;
-  wordCountValue: number;
-}
-
 const initialProjectOptions: OptionState = {
   countingType: 'translation',
   currency: 'PLN',
