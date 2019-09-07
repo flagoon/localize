@@ -42,6 +42,21 @@ declare interface ReportData {
   fileInfoAndBatch: ReportFileData;
 }
 
+type Fuzzy = 'include' | 'noInclude';
+type CountingType = 'correction' | 'translation';
+type ShowAs = 'characters' | 'words';
+
+interface OptionState {
+  countingType: CountingType;
+  currency: string;
+  fuzzy: Fuzzy;
+  pageCharacterCount: number;
+  pageWordCount: number;
+  showAs: ShowAs;
+  wordCount: number;
+  wordCountValue: number;
+}
+
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 declare type $TSFixMe = any;
 

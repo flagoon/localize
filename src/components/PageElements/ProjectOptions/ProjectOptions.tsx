@@ -1,10 +1,19 @@
-import React from 'react';
+import React, { ChangeEvent } from 'react';
 
 import RadioButton from './RadioButton';
 
 import TextField from '@material-ui/core/TextField';
 
-function ProjectOptions({ handleChange, options }: $TSFixMe): JSX.Element {
+interface ProjectOptionsProps {
+  handleChange: (event: ChangeEvent<HTMLInputElement>) => void;
+  options: OptionState;
+}
+
+function ProjectOptions({
+  handleChange,
+  options,
+}: ProjectOptionsProps): JSX.Element {
+  console.log(options);
   return (
     <>
       <RadioButton

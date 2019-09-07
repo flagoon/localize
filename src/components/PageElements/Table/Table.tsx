@@ -18,7 +18,7 @@ function CalculationTable({
   tableValues: AttributesObject;
   handleChange: (value: string, cellName: keyof AttributesObject) => void;
 }): JSX.Element | null {
-  const [isShown, toggleIsShown] = useState<$TSFixMe>(false);
+  const [isShown, toggleIsShown] = useState<boolean>(false);
 
   const ProjectTable = (
     <Table>
