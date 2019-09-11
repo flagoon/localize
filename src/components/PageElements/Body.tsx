@@ -45,7 +45,18 @@ function Body(): JSX.Element {
     e: ChangeEvent<HTMLInputElement>,
   ): void => {
     const { name, value } = e.currentTarget;
-    const newOptions = { ...projectOptions, [name]: value };
+    const numericLabels = [
+      'pageCharacterCount',
+      'pageWordCount',
+      'wordCount',
+      'wordCountValue',
+    ];
+
+    const removedLeadingZeros = numericLabels.includes(name)
+      ? Number(value).toString()
+      : value;
+
+    const newOptions = { ...projectOptions, [name]: removedLeadingZeros };
     setProjectOptions(newOptions);
   };
 
@@ -66,7 +77,7 @@ function Body(): JSX.Element {
             handleChange={handleProjectOptionsChange}
             options={projectOptions}
           />
-          <SaveButtons />
+          <SaveButtons options={projectOptions} />
         </Grid>
         <CalculationTable
           tableValues={tableData}
