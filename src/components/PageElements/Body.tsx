@@ -82,6 +82,7 @@ function Body(): JSX.Element {
         <CalculationTable
           tableValues={tableData}
           handleChange={setTableValue}
+          showAs={projectOptions.showAs}
         />
       </Grid>
     </PageElementWrapper>
