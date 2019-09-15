@@ -77,7 +77,7 @@ function ProjectOptions({
           },
           {
             value: 'characters',
-            label: 'Kwoty',
+            label: 'Znaki',
           },
         ]}
       />

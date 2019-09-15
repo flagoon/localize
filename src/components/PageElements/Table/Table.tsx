@@ -14,9 +14,11 @@ import TextField from '@material-ui/core/TextField';
 function CalculationTable({
   tableValues,
   handleChange,
+  showAs,
 }: {
   tableValues: AttributesObject;
   handleChange: (value: string, cellName: keyof AttributesObject) => void;
+  showAs: string;
 }): JSX.Element | null {
   const [isShown, toggleIsShown] = useState<boolean>(false);
 
@@ -36,66 +38,77 @@ function CalculationTable({
           cellValue={tableValues.perfect}
           rowFor="perfect"
           name="Perfect"
+          showAs={showAs}
         />
         <TableRows
           onChangeHandler={handleChange}
           cellValue={tableValues.inContextExact}
           rowFor="inContextExact"
           name="Context match"
+          showAs={showAs}
         />
         <TableRows
           onChangeHandler={handleChange}
           cellValue={tableValues.exact}
           rowFor="exact"
           name="Exact"
+          showAs={showAs}
         />
         <TableRows
           onChangeHandler={handleChange}
           cellValue={tableValues.locked}
           rowFor="locked"
           name="Locked"
+          showAs={showAs}
         />
         <TableRows
           onChangeHandler={handleChange}
           cellValue={tableValues.repeated}
           rowFor="repeated"
           name="Repeated"
+          showAs={showAs}
         />
         <TableRows
           onChangeHandler={handleChange}
           cellValue={tableValues.new}
           rowFor="new"
           name="New"
+          showAs={showAs}
         />
         <TableRows
           onChangeHandler={handleChange}
           cellValue={tableValues.fuzzy50}
           rowFor="fuzzy50"
           name="Fuzzy 50-74%"
+          showAs={showAs}
         />
         <TableRows
           onChangeHandler={handleChange}
           cellValue={tableValues.fuzzy75}
           rowFor="fuzzy75"
           name="Fuzzy 75-84%"
+          showAs={showAs}
         />
         <TableRows
           onChangeHandler={handleChange}
           cellValue={tableValues.fuzzy85}
           rowFor="fuzzy85"
           name="Fuzzy 85-94%"
+          showAs={showAs}
         />
         <TableRows
           onChangeHandler={handleChange}
           cellValue={tableValues.fuzzy95}
           rowFor="fuzzy95"
           name="Fuzzy 95-99%"
+          showAs={showAs}
         />
         <TableRows
           onChangeHandler={handleChange}
           cellValue={tableValues.total}
           rowFor="total"
           name="Total"
+          showAs={showAs}
         />
       </TableBody>
     </Table>
@@ -113,6 +126,7 @@ interface TableRowsProps {
   name: string;
   cellValue: number;
   onChangeHandler: (value: string, cellName: keyof AttributesObject) => void;
+  showAs: string;
 }
 
 function TableRows({
@@ -120,6 +134,7 @@ function TableRows({
   name,
   cellValue,
   onChangeHandler,
+  showAs,
 }: TableRowsProps): JSX.Element {
   const { reportContent } = useContext(ReportContext);
   const { fileInfoAndBatch } = reportContent;
@@ -129,17 +144,15 @@ function TableRows({
     onChangeHandler(value, name as keyof AttributesObject);
   };
 
-  const numberOfWords =
+  const numberOfWordOrCharacters =
     fileInfoAndBatch && fileInfoAndBatch.batchTotal
-      ? fileInfoAndBatch.batchTotal[rowFor].words
+      ? fileInfoAndBatch.batchTotal[rowFor][showAs]
       : 0;
 
   return (
     <TableRow>
       <TableCell align="right">{name}</TableCell>
-      <TableCell align="right">
-        {numberOfWords ? fileInfoAndBatch.batchTotal[rowFor].words : ''}
-      </TableCell>
+      <TableCell align="right">{numberOfWordOrCharacters}</TableCell>
       {rowFor !== 'total' ? (
         <>
           <TableCell>
@@ -163,9 +176,7 @@ function TableRows({
             </FormControl>
           </TableCell>
           <TableCell align="right" style={{ width: '5rem' }}>
-            {numberOfWords
-              ? (cellValue * fileInfoAndBatch.batchTotal[rowFor].words) / 100
-              : 0}
+            {(numberOfWordOrCharacters * cellValue) / 100}
           </TableCell>
         </>
       ) : null}
